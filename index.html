@@ -1,0 +1,170 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body>
+        <header class="">
+            <nav>
+                <div class="container d-flex ">
+                    
+                    <a class="cloud" href="/"><i class="fa-solid fa-cloud"></i>
+                        <div class="logo-type">
+                            <h1 class="site-title">Weather</h1>
+                            <p class="site-description">tagline goes here</p>
+                        </div>
+                    </a>
+                    <ul class="nav nav-pills ms-auto  " id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Home</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-News-tab" data-bs-toggle="pill" data-bs-target="#pills-News"
+                                type="button" role="tab" aria-controls="pills-News" aria-selected="false">News</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-LiveCameras-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-LiveCameras" type="button" role="tab"
+                                aria-controls="pills-LiveCameras" aria-selected="false">Live Cameras</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-photos-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-photos" type="button" role="tab" aria-controls="pills-photos"
+                                aria-selected="false">Photos</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">Contact</button>
+                        </li>
+                    </ul>
+                    <!-- <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab" tabindex="0">Home</div>
+                        <div class="tab-pane fade" id="pills-News-tab" role="tabpanel" aria-labelledby="pills-News-tab"
+                            tabindex="0">News</div>
+                        <div class="tab-pane fade" id="pills-LiveCameras-tab" role="tabpanel"
+                            aria-labelledby="pills-LiveCameras-tab-tab" tabindex="0">Live cameras</div>
+                        <div class="tab-pane fade" id="pills-pills-photos-tab" role="tabpanel"
+                            aria-labelledby="pills-pills-photos-tab-tab" tabindex="0">Photos</div>
+                        <div class="tab-pane fade" id="pills-contact-tab" role="tabpanel"
+                            aria-labelledby="pills-contact-tab" tabindex="0">Contact</div>
+                    </div> -->
+                </div>
+            </nav>
+        </header>
+        <div class="bg-city mb-5">
+
+            <div class="container">
+                <div class="row ">
+                    <form class="find-location form-control d-flex">
+                        <input type="text" placeholder="Find your location..." id="search" class="w-100 ">
+                        <input type="button" value="Find" id="submit" class="find-button">
+                    </form>
+                </div>
+                <div class="container mt-5 ">
+                    <div class="row justify-content-between" id="forecast">
+                        <div class="col-md-4 rounded-start-top-10 px-0 bg-323544">
+                            <div class="today forecast">
+                                <div class="forecast-header d-flex p-2 rounded-start-top-10 justify-content-between"
+                                    id="today">
+                                    <div class="day">Friday</div>
+                                    <div class=" date">29December</div>
+                                </div> <!-- .forecast-header -->
+                                <div class="forecast-content" id="current">
+                                    <div class="location">Cairo</div>
+                                    <div class="degree d-flex align-items-center">
+                                        <div class="num">21<deg>o</deg>C</div>
+
+                                        <div class="forecast-icon">
+                                            <img src="images/116.png" alt="" width="90">
+                                        </div>
+
+                                    </div>
+                                    <div class="custom">Partly cloudy</div>
+                                    <span class="forecast-alt"><img class="forecast-alt" src="images/icon-umberella.png"
+                                            alt="">20%</span>
+                                    <span class="forecast-alt"><img class="forecast-alt" src="images/icon-wind.png"
+                                            alt="">18km/h</span>
+                                    <span class="forecast-alt"><img class="forecast-alt" src="images/icon-compass.png"
+                                            alt="">East</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 bg-262936 px-0 text-center">
+                            <div class="forecast">
+                                <div class="forecast-header p-2">
+                                    <div class="day">Saturday</div>
+                                </div> <!-- .forecast-header !-->
+                                <div class="forecast-content m-5">
+                                    <div class="forecast-icon">
+                                        <img src="images/176.png" alt="" width="48">
+                                    </div>
+                                    <div class="degree p-3 fs-4 fw-bold">21.9<deg>o</deg>C</div>
+                                    <small>14.1<deg>o</deg></small>
+                                    <div class="custom">Patchy rain possible</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 bg-323544 px-0 rounded-end-top-10 text-center">
+                            <div class="forecast">
+                                <div class="forecast-header p-2 rounded-end-top-10">
+                                    <div class="day">Sunday</div>
+                                </div> <!-- .forecast-header -->
+                                <div class="forecast-content m-5">
+                                    <div class="forecast-icon">
+                                        <img src="images/176.png" width="48">
+                                    </div>
+                                    <div class="degree p-3 fs-5 fw-bold">22<deg>o</deg>C</div>
+                                    <small>14.6<deg>o</deg></small>
+                                    <div class="custom">Patchy rain possible</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="p-5 bg-323544">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+
+                        <form class="subscribe-location form-control d-flex">
+                            <input type="text" placeholder="Enter your email to subscribe..." id="search" class="w-100">
+                            <input type="button" value="submit" id="submit" class="find-button">
+                        </form>
+                        <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1">
+                        <div class="social-links d-flex">
+                            <a href="index.html"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="index.html"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="index.html"><i class="fa-brands fa-google-plus-g"></i></a>
+                            <a href="index.html"><i class="fa-brands fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script src="js/script.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+
+    </html>

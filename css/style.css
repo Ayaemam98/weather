@@ -1,0 +1,155 @@
+body {
+    background-color: #1e202b;
+    color: #fff;
+}
+
+header {
+    /* padding: 50px 0; */
+    margin: 2.5em;
+}
+
+.cloud i {
+    font-size: 40px;
+    padding-right: .5em;
+}
+
+header .cloud .logo-type {
+    display: inline-block;
+}
+
+nav .cloud .site-title {
+    font-size: 1.2em;
+    color: white;
+}
+
+nav .cloud .site-description {
+    font-size: .7em;
+    color: #bfc1c8;
+}
+
+.nav-pills .nav-link,
+.nav-pills .nav-link.active {
+    background-color: transparent;
+    color: #fff;
+    width: auto;
+    height: 30px;
+    border-color: #009ad8;
+    margin: .5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-size: 14px;
+}
+
+.nav-pills .nav-link.active {
+    border: 2px solid #009ad8;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #009ad8;
+}
+
+nav .nav-item button:hover button,
+nav .nav-item:hover button {
+    border: 2px solid #009ad8;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-city {
+    background-image: url(../images/restaurant-2-light.png);
+    /* background-size: cover; */
+    /* height: 55vh; */
+    background-repeat: no-repeat;
+}
+
+#search{
+    border: none;
+    background-color: transparent;
+    color: #fff;
+}
+.find-location{
+    background-color: #1e202b;
+    border: none;
+    position: relative;
+    margin-top: 5em;
+    padding: 1em;
+    border-radius: 50px;
+   
+}
+.find-button{
+    background-color: #009ad8;
+    border: none;
+    color: #fff;
+    padding-left: 2em;
+    padding-right: 2em;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px;
+    border-radius: 50px;
+}
+.forecast-header{
+    background-color: rgb(30, 32, 43);
+    font-size: 14px;
+
+}
+.rounded-start-top-10{
+    border-top-left-radius: 10px;
+}
+.rounded-end-top-10{
+    border-top-right-radius: 10px;
+}
+.bg-323544{
+    background-color: #323544;
+}
+.bg-262936{
+    background-color: #262936;
+}
+.forecast-content{
+    margin: 1em;
+}
+.custom{
+    color: #009ad8;
+    padding-top:1em ;
+    padding-bottom:1em ;
+}
+.forecast-alt{
+    padding: 2px;
+    font-size: 14px;
+    color: #bfc1c8;
+}
+.num{
+    font-size: 80px;
+    font-weight: 700;
+}
+.subscribe-location{
+    background-color: #1e202b;
+    border: none;
+    position: relative;
+    padding: 1em;
+    border-radius: 50px;
+}
+footer p{
+    font-size: 14px;
+    color: #bfc1c8;
+    padding: 1.5em;
+}
+.social-links a{
+    background-color: #262936;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-links a{
+  text-decoration: none;
+}
